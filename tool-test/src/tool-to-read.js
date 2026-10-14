@@ -1,0 +1,1 @@
+console.log('🌛-我是要被读取的demo文件：tool-to-read.js')

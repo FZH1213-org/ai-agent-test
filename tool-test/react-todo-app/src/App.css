@@ -1,0 +1,551 @@
+/* ============ 全局 ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'PingFang SC',
+    'Microsoft YaHei',
+    sans-serif;
+  /* 渐变背景：蓝到紫 */
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #a855f7 100%);
+  background-attachment: fixed;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* ============ 主卡片 ============ */
+.card {
+  width: 100%;
+  max-width: 560px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  box-shadow:
+    0 25px 60px rgba(30, 27, 75, 0.35),
+    0 10px 24px rgba(30, 27, 75, 0.15);
+  padding: 32px;
+  animation: slideUp 0.5s ease-out both;
+}
+
+/* ============ 头部 ============ */
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.title-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 8px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #fff;
+  font-size: 1.4rem;
+  vertical-align: middle;
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+/* ============ 输入区 ============ */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 13px 18px;
+  font-size: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+  background: #f9fafb;
+}
+
+.todo-input:focus {
+  border-color: #8b5cf6;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.15);
+  transform: translateY(-1px);
+}
+
+.todo-input::placeholder {
+  color: #9ca3af;
+}
+
+/* ============ 按钮 ============ */
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 12px 20px;
+  transition: all 0.25s ease;
+}
+
+.btn-add {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
+}
+
+.btn-add:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(99, 102, 241, 0.45);
+}
+
+.btn-add:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.35);
+}
+
+.btn-add:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ============ 筛选器 ============ */
+.filter-row {
+  display: flex;
+  gap: 8px;
+  background: #f3f4f6;
+  padding: 6px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+.filter-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 9px 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  color: #4b5563;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.filter-btn.active {
+  background: #fff;
+  color: #7c3aed;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ============ 统计信息 ============ */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 6px;
+  background: linear-gradient(180deg, #f9fafb, #f3f4f6);
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-2px);
+  border-color: #c4b5fd;
+  box-shadow: 0 6px 14px rgba(124, 58, 237, 0.12);
+}
+
+.stat-value {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.stat-active {
+  color: #2563eb;
+}
+
+.stat-done {
+  color: #059669;
+}
+
+.stat-rate {
+  color: #7c3aed;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* 进度条 */
+.progress-track {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #a855f7);
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============ Todo 列表 ============ */
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding: 4px 2px;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+  animation: itemIn 0.35s ease-out both;
+}
+
+.todo-item:hover {
+  border-color: #c4b5fd;
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.12);
+  transform: translateY(-2px);
+}
+
+/* 删除时的退出动画 */
+.todo-item.exiting {
+  animation: itemOut 0.3s ease-in forwards;
+}
+
+@keyframes itemIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes itemOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+    max-height: 200px;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(60px);
+    max-height: 0;
+    margin-bottom: -10px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============ 自定义复选框 ============ */
+.checkbox-wrap {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.checkbox-wrap input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.checkbox-custom {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: transparent;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.checkbox-wrap:hover .checkbox-custom {
+  border-color: #8b5cf6;
+}
+
+.checkbox-wrap input:checked + .checkbox-custom {
+  background: linear-gradient(135deg, #22c55e, #059669);
+  border-color: transparent;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ============ 文字 ============ */
+.todo-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-break: break-word;
+  cursor: default;
+  transition: color 0.25s ease;
+}
+
+.todo-item.completed .todo-text {
+  color: #9ca3af;
+  text-decoration: line-through;
+  text-decoration-color: #c4b5fd;
+}
+
+/* ============ 操作按钮 ============ */
+.actions {
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  transform: translateX(6px);
+  transition: all 0.25s ease;
+}
+
+.todo-item:hover .actions {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.icon-btn {
+  border: none;
+  background: #f3f4f6;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: #ede9fe;
+  transform: scale(1.12);
+}
+
+.icon-danger:hover {
+  background: #fee2e2;
+}
+
+/* ============ 编辑模式 ============ */
+.edit-row {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border: 2px solid #8b5cf6;
+  border-radius: 10px;
+  outline: none;
+  background: #f5f3ff;
+}
+
+.btn-save,
+.btn-cancel {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.btn-save {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: #fff;
+}
+
+.btn-save:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(99, 102, 241, 0.35);
+}
+
+.btn-cancel {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.btn-cancel:hover {
+  background: #e5e7eb;
+}
+
+/* ============ 清除按钮 ============ */
+.btn-clear {
+  width: 100%;
+  margin-top: 18px;
+  padding: 11px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.08);
+  color: #dc2626;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  animation: fadeIn 0.3s ease-out both;
+}
+
+.btn-clear:hover {
+  background: rgba(239, 68, 68, 0.15);
+  transform: translateY(-1px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============ 空状态 ============ */
+.empty {
+  text-align: center;
+  padding: 40px 0;
+  color: #9ca3af;
+  animation: fadeIn 0.4s ease-out both;
+}
+
+.empty-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+  animation: bob 2s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ============ 页脚 ============ */
+.footer {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* ============ 响应式 ============ */
+@media (max-width: 520px) {
+  .card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .btn-add {
+    padding: 12px;
+  }
+}
