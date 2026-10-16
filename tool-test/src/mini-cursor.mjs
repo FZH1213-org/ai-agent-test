@@ -4,7 +4,7 @@ import { HumanMessage, SystemMessage, ToolMessage } from '@langchain/core/messag
 import { executeCommandTool, listDirectoryTool, readFileTool, writeFileTool } from './all-tools.mjs';
 import chalk from 'chalk';
 
-const model = new ChatOpenAI({ 
+const model = new ChatOpenAI({
     model: process.env.MODEL_NAME || "glm-4-flash",
     apiKey: process.env.OPENAI_API_KEY,
     temperature: 0,
@@ -13,7 +13,7 @@ const model = new ChatOpenAI({
     },
 });
 
-
+// 把tools绑定到大模型
 const tools = [
     readFileTool,
     writeFileTool,
@@ -104,7 +104,7 @@ const case1 = `创建一个功能丰富的 React TodoList 应用：
 `;
 
 try {
-  await runAgentWithTools(case1);
+    await runAgentWithTools(case1);
 } catch (error) {
-  console.error(`\n❌ 错误: ${error.message}\n`);
+    console.error(`\n❌ 错误: ${error.message}\n`);
 }
