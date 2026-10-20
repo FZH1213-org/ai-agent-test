@@ -20,6 +20,9 @@ importers:
       dotenv:
         specifier: ^18.0.8
         version: 18.0.8
+      js-tiktoken:
+        specifier: ^1.0.21
+        version: 1.0.21
 
 packages:
 
