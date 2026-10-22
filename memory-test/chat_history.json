@@ -1,0 +1,273 @@
+{
+    "": {
+        "user_session_001": {
+            "messages": [
+                {
+                    "type": "human",
+                    "data": {
+                        "content": "红烧肉怎么做",
+                        "additional_kwargs": {},
+                        "response_metadata": {}
+                    }
+                },
+                {
+                    "type": "ai",
+                    "data": {
+                        "id": "20261022105519abcad9458a724b9c",
+                        "content": "红烧肉是我的拿手推荐！肥而不腻、入口即化，做法其实不难，跟着下面的步骤来就行～\n\n## 🥘 准备食材\n\n- 五花肉 500克（选肥瘦均匀的三层肉最好）\n- 冰糖 20克左右\n- 生姜 3-4片\n- 葱段 2根\n- 八角 2个、桂皮 1小块、香叶 2片\n- 料酒 2勺、生抽 2勺、老抽 1勺\n- 盐 少许\n\n## 👨‍🍳 具体步骤\n\n**1. 处理五花肉**\n五花肉切成2-3厘米见方的块，冷水下锅，加姜片和1勺料酒，煮开后撇去浮沫，捞出用温水冲洗干净。\n\n**2. 炒糖色（关键步骤！）**\n锅里放少许油，加冰糖小火慢慢炒，直到糖融化变成焦糖色、冒小泡泡。**注意火一定要小**，炒过头会发苦。\n\n**3. 上色煸炒**\n糖色炒好后立刻倒入肉块，快速翻炒让每块肉都裹上糖色，煸炒几分钟把部分油脂逼出来，肉会更香不腻。\n\n**4. 调味炖煮**\n加入葱姜、八角、桂皮、香叶炒香，淋入料酒、生抽、老抽翻炒上色。然后倒入**热水**没过肉，大火烧开转小火，盖上盖子炖45-60分钟。\n\n**5. 收汁出锅**\n肉炖到软烂后，开大火收汁，汤汁浓稠地裹在肉上就可以出锅了！\n\n## 💡 小贴士\n\n- 炖的时候加**热水**而不是冷水，肉不容易变柴\n- 想更软烂可以延长炖煮时间，或用高压锅压20分钟\n- 收汁时要不停翻动，避免糊锅\n- 喜欢入口即化的口感，可以把肥肉部分多煸一会儿\n\n配上白米饭，那叫一个香！有什么步骤不清楚的随时问我哦 😋",
+                        "additional_kwargs": {
+                            "reasoning_content": "The user is asking in Chinese \"红烧肉怎么做\" which means \"How to make braised pork belly (hongshao rou)\". This is a classic Chinese dish. I'm a friendly cooking assistant who loves sharing food and cooking tips.\n\nI should respond in Chinese since the user asked in Chinese. Let me provide a detailed, friendly recipe for 红烧肉, which is a beloved Chinese dish of braised pork belly.\n\nLet me think about a good traditional recipe:\n\n红烧肉\n\nIngredients:\n- 五花肉 - about 500g\n- 冰糖 - for color and sweetness\n- 生姜\n- 葱\n- 八角\n- 桂皮\n- 香叶\n- 料酒\n- 生抽\n- 老抽\n- 盐\n\nSteps:\n1. Cut pork belly into 2-3cm cubes\n2. Blanch in cold water with ginger and cooking wine to remove impurities\n3. Either caramelize sugar (炒糖色) or dry-fry the pork to render fat\n4. Add aromatics and spices\n5. Add cooking wine, soy sauces\n6. Add hot water to cover\n7. Simmer for 45-60 minutes until tender\n8. Reduce sauce on high heat\n\nKey tips:\n- 炒糖色 is important for the red color\n- Use hot water when braising to keep meat tender\n- Low and slow cooking\n\nI should format this nicely with headers, ingredient lists, and numbered steps. Since this is a recipe request, using markdown formatting makes sense - it will be rendered in a chat interface. I'll use a friendly tone as instructed by the system prompt, maybe add some tips at the end.\n\nLength: Medium length - detailed enough to be a complete recipe but not overwhelming. Include ingredients, steps, and a few helpful tips."
+                        },
+                        "response_metadata": {
+                            "tokenUsage": {
+                                "promptTokens": 31,
+                                "completionTokens": 822,
+                                "totalTokens": 853
+                            },
+                            "finish_reason": "stop",
+                            "model_provider": "openai",
+                            "model_name": "glm-5.3-flash",
+                            "usage": {
+                                "completion_tokens": 822,
+                                "completion_tokens_details": {
+                                    "reasoning_tokens": 376
+                                },
+                                "prompt_tokens": 31,
+                                "prompt_tokens_details": {
+                                    "cached_tokens": 0
+                                },
+                                "total_tokens": 853
+                            }
+                        },
+                        "type": "ai",
+                        "tool_calls": [],
+                        "invalid_tool_calls": [],
+                        "usage_metadata": {
+                            "output_tokens": 822,
+                            "input_tokens": 31,
+                            "total_tokens": 853,
+                            "input_token_details": {
+                                "cache_read": 0
+                            },
+                            "output_token_details": {
+                                "reasoning": 376
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "human",
+                    "data": {
+                        "content": "好吃吗？",
+                        "additional_kwargs": {},
+                        "response_metadata": {}
+                    }
+                },
+                {
+                    "type": "ai",
+                    "data": {
+                        "id": "202610221055371e51396bdc7144c7",
+                        "content": "超级好吃！那可是经典中的经典，多少人为了它多添两碗米饭呢 😄\n\n想象一下：\n\n- **肥肉部分**入口即化，一点不腻，像果冻一样滑\n- **瘦肉部分**吸满了汤汁，软烂入味，嚼起来特别香\n- **那层糖色**带着微微的焦香甜味，颜色红亮诱人\n- 最后**浓稠的酱汁**拌在米饭上，简直是灵魂吃法！\n\n红烧肉最大的魅力就是那种咸甜交融的味道，酱香浓郁，刚出锅的时候满屋子都是香味，邻居闻到都要敲门问做啥了 😆\n\n不过说实话，好不好吃也取决于几个关键点：\n\n1. **糖色炒得好** → 颜色红亮、有回甘，不会发苦\n2. **火候炖到位** → 肉软烂但不散，筷子一夹就颤\n3. **收汁收得妙** → 汤汁浓稠挂在肉上，油亮油亮的\n\n按上面的方法做，第一次成功率就很高！你做了之后记得回来告诉我效果如何呀，要是哪里翻车了我帮你分析～ 🍚✨",
+                        "additional_kwargs": {
+                            "reasoning_content": "The user is asking \"好吃吗？\" (Is it tasty?) after I gave them the recipe for hong shao rou (braised pork). This is a casual, friendly question. As a friendly cooking assistant, I should respond enthusiastically about how delicious it is, maybe describe the taste experience, and keep the friendly, warm tone. I can use some emojis and keep it conversational since my persona is a friendly cooking assistant who loves sharing food and cooking tips.\n\nI should respond in Chinese since the conversation is in Chinese. The response should be warm, maybe a bit playful, describing the flavors and textures. Not too long - this is a casual question."
+                        },
+                        "response_metadata": {
+                            "tokenUsage": {
+                                "promptTokens": 476,
+                                "completionTokens": 387,
+                                "totalTokens": 863
+                            },
+                            "finish_reason": "stop",
+                            "model_provider": "openai",
+                            "model_name": "glm-5.3-flash",
+                            "usage": {
+                                "completion_tokens": 387,
+                                "completion_tokens_details": {
+                                    "reasoning_tokens": 133
+                                },
+                                "prompt_tokens": 476,
+                                "prompt_tokens_details": {
+                                    "cached_tokens": 0
+                                },
+                                "total_tokens": 863
+                            }
+                        },
+                        "type": "ai",
+                        "tool_calls": [],
+                        "invalid_tool_calls": [],
+                        "usage_metadata": {
+                            "output_tokens": 387,
+                            "input_tokens": 476,
+                            "total_tokens": 863,
+                            "input_token_details": {
+                                "cache_read": 0
+                            },
+                            "output_token_details": {
+                                "reasoning": 133
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "human",
+                    "data": {
+                        "content": "红烧肉怎么做",
+                        "additional_kwargs": {},
+                        "response_metadata": {}
+                    }
+                },
+                {
+                    "type": "ai",
+                    "data": {
+                        "id": "202610221155122193956d561d4f1c",
+                        "content": "哈哈，看来你是真的很想吃红烧肉呀 😄 刚刚给你发过详细步骤啦，我再给你一个**极简速记版**：\n\n## 📝 一句话流程\n\n**切块焯水 → 小火炒糖色 → 肉块上色 → 加热水+调料炖1小时 → 大火收汁**\n\n## 🔑 记住三个关键\n\n1. **炒糖色**：冰糖小火炒至焦糖色，别炒糊\n2. **加热水**：炖煮时一定加热水，肉才不柴\n3. **小火炖**：慢炖45-60分钟，收汁要浓稠\n\n---\n\n不过我猜你可能想问点别的？比如：\n\n- 🍖 想要**不炒糖色的懒人版**？（用老抽直接上色，更简单）\n- 🌶️ 想加点**配菜**？（土豆、鹌鹑蛋、笋干都超搭）\n- 🥘 家里**没有某些调料**怎么办？\n- ⏱️ 想**省时间**用高压锅的版本？\n\n告诉我你的需求，我再给你定制～ 或者你打算今天就动手做？遇到问题随时喊我！👨‍🍳",
+                        "additional_kwargs": {
+                            "reasoning_content": "The user is asking the same question again: \"红烧肉怎么做\" (How to make braised pork belly). They already asked this at the beginning of the conversation and I gave a detailed recipe. Then they asked \"好吃吗？\" (Is it tasty?) and I responded.\n\nNow they're asking the same question again. This could be:\n1. They forgot they already asked\n2. They want a simpler/shorter version\n3. It's a test or accidental repeat\n4. They want more details on something\n\nAs a friendly cooking assistant, I should acknowledge that we just talked about this, maybe with a light-hearted touch, and offer to either repeat the recipe or ask if they want something different - like a simplified version, or tips on a specific step, or variations.\n\nI shouldn't just copy-paste the same long recipe. A good response would be warm, playful about the repeat question, and offer helpful options. Maybe give a quick condensed version and offer to elaborate.\n\nLet me write a friendly response in Chinese that:\n1. Playfully notes they asked before\n2. Gives a super condensed quick version\n3. Offers to help with specific details or variations"
+                        },
+                        "response_metadata": {
+                            "tokenUsage": {
+                                "promptTokens": 735,
+                                "completionTokens": 498,
+                                "totalTokens": 1233
+                            },
+                            "finish_reason": "stop",
+                            "model_provider": "openai",
+                            "model_name": "glm-5.3-flash",
+                            "usage": {
+                                "completion_tokens": 498,
+                                "completion_tokens_details": {
+                                    "reasoning_tokens": 239
+                                },
+                                "prompt_tokens": 735,
+                                "prompt_tokens_details": {
+                                    "cached_tokens": 0
+                                },
+                                "total_tokens": 1233
+                            }
+                        },
+                        "type": "ai",
+                        "tool_calls": [],
+                        "invalid_tool_calls": [],
+                        "usage_metadata": {
+                            "output_tokens": 498,
+                            "input_tokens": 735,
+                            "total_tokens": 1233,
+                            "input_token_details": {
+                                "cache_read": 0
+                            },
+                            "output_token_details": {
+                                "reasoning": 239
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "human",
+                    "data": {
+                        "content": "好吃吗？",
+                        "additional_kwargs": {},
+                        "response_metadata": {}
+                    }
+                },
+                {
+                    "type": "ai",
+                    "data": {
+                        "id": "20261022115524a0d1c3c1492b4275",
+                        "content": "哈哈，你这是第二次问我啦 😆 答案依然是——**好吃到停不下来！**\n\n不过我有个大胆的猜测：你是不是光看不动手，馋了半天呀？😏\n\n光听我说一百遍“好吃”，都不如自己亲口尝一口来得实在！我敢打包票：\n\n- 第一次做能成功 ✅\n- 端上桌家人抢着吃 ✅\n- 汤汁拌饭能多吃一碗 ✅\n\n## 🎯 来，给自己定个小目标\n\n> **本周末就试一次！** 五花肉、冰糖、酱油，超市随手就能买齐，成本也就二三十块，失败了大不了当经验，成功了就是人生新技能！\n\n---\n\n要是你有什么顾虑，跟我说说：\n\n- 😰 怕炒糖色失败？→ 我教你懒人版，老抽上色一样香\n- ⏰ 没时间炖？→ 高压锅25分钟搞定\n- 🍳 厨房新手？→ 我陪你一步步来，随时提问\n\n怎么样，要不要现在就列个购物清单？我把需要的食材给你整理好 😄🍖",
+                        "additional_kwargs": {
+                            "reasoning_content": "The user keeps asking the same questions repeatedly - \"红烧肉怎么做\" (How to make red braised pork) and \"好吃吗?\" (Is it delicious?). This is the second time they're asking \"好吃吗?\"\n\nI've already answered \"好吃吗?\" enthusiastically before. Now they're asking again. I should respond in a friendly, playful way since this is a repeated question. Maybe they're testing me, or just being playful, or genuinely can't decide whether to make it.\n\nI should keep the response fun and warm, acknowledge the repetition playfully, and maybe encourage them to try making it themselves rather than just repeating the same answer. I could be more concise this time since I've already given a full answer."
+                        },
+                        "response_metadata": {
+                            "tokenUsage": {
+                                "promptTokens": 999,
+                                "completionTokens": 389,
+                                "totalTokens": 1388
+                            },
+                            "finish_reason": "stop",
+                            "model_provider": "openai",
+                            "model_name": "glm-5.3-flash",
+                            "usage": {
+                                "completion_tokens": 389,
+                                "completion_tokens_details": {
+                                    "reasoning_tokens": 147
+                                },
+                                "prompt_tokens": 999,
+                                "prompt_tokens_details": {
+                                    "cached_tokens": 704
+                                },
+                                "total_tokens": 1388
+                            }
+                        },
+                        "type": "ai",
+                        "tool_calls": [],
+                        "invalid_tool_calls": [],
+                        "usage_metadata": {
+                            "output_tokens": 389,
+                            "input_tokens": 999,
+                            "total_tokens": 1388,
+                            "input_token_details": {
+                                "cache_read": 704
+                            },
+                            "output_token_details": {
+                                "reasoning": 147
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "human",
+                    "data": {
+                        "content": "需要哪些食材？",
+                        "additional_kwargs": {},
+                        "response_metadata": {}
+                    }
+                },
+                {
+                    "type": "ai",
+                    "data": {
+                        "id": "20261022115620034ebeaa92b54911",
+                        "content": "来来来，购物清单安排上！🛒 按500克五花肉的量给你列好：\n\n## 🛍️ 必买清单\n\n**主角**\n| 食材 | 用量 | 挑选小窍门 |\n|------|------|-----------|\n| 五花肉 | 500克 | 选**肥瘦分层均匀**的三层肉，颜色粉红、按下去有弹性，别买太肥的 |\n\n**调味担当**\n| 食材 | 用量 | 备注 |\n|------|------|------|\n| 冰糖 | 20克 | 上色神器，没有可用白糖代替 |\n| 生抽 | 2勺 | 提鲜 |\n| 老抽 | 1勺 | 上色，别放多了会发黑 |\n| 料酒 | 2勺 | 去腥必备，没有用白酒也行 |\n\n**香料小分队**\n| 食材 | 用量 | 备注 |\n|------|------|------|\n| 生姜 | 3-4片 | 家里应该有吧？ |\n| 葱 | 2根 | 大葱小葱都可以 |\n| 八角 | 2个 | 去菜市场散装买，几块钱一大把 |\n| 桂皮 | 1小块 | 可选，有更香 |\n| 香叶 | 2片 | 可选，有则加没有也不影响 |\n\n## 💰 成本估算\n\n大概 **25-35元** 就能搞定，够2-3人吃，比外面饭店便宜多了！\n\n## 🎁 可选加分项\n\n想升级吃法的话，顺手再买点：\n- 🥔 土豆 2个 → 最后半小时放进去，吸满汤汁绝了\n- 🥚 鹌鹑蛋 一盒 → 煮熟剥壳一起炖，孩子抢着吃\n- 🧄 鹌鹑蛋觉得麻烦，鸡蛋也行\n\n---\n\n💡 **懒人省事版**：家里如果有生抽老抽料酒，其实只需要买**五花肉和冰糖**两样，八角桂皮这些没有也照样能做，就是香味少那么一丢丢～\n\n买回来要是不知道怎么挑肉，拍个照发我看看！👨‍🍳",
+                        "additional_kwargs": {
+                            "reasoning_content": "The user is asking what ingredients are needed for braised pork (红烧肉). This is a natural follow-up after I offered to make a shopping list. I should provide a clear, organized shopping list with quantities. Since they seemed to be wavering about actually making it, I should keep this encouraging and practical, maybe adding tips about what to look for when buying.\n\nLet me organize:\n- Main ingredients: pork belly, rock sugar\n- Aromatics: ginger, scallions, garlic (optional)\n- Spices: star anise, cinnamon, bay leaves\n- Seasonings: cooking wine, light soy sauce, dark soy sauce, salt\n- Optional additions: potatoes, quail eggs, etc.\n\nI should give quantities for 500g of pork, mention what to look for when buying pork belly (three layers, even fat distribution), and maybe mention substitutes if they don't have certain spices. Keep it friendly and humorous as per the persona."
+                        },
+                        "response_metadata": {
+                            "tokenUsage": {
+                                "promptTokens": 1249,
+                                "completionTokens": 674,
+                                "totalTokens": 1923
+                            },
+                            "finish_reason": "stop",
+                            "model_provider": "openai",
+                            "model_name": "glm-5.3-flash",
+                            "usage": {
+                                "completion_tokens": 674,
+                                "completion_tokens_details": {
+                                    "reasoning_tokens": 195
+                                },
+                                "prompt_tokens": 1249,
+                                "prompt_tokens_details": {
+                                    "cached_tokens": 0
+                                },
+                                "total_tokens": 1923
+                            }
+                        },
+                        "type": "ai",
+                        "tool_calls": [],
+                        "invalid_tool_calls": [],
+                        "usage_metadata": {
+                            "output_tokens": 674,
+                            "input_tokens": 1249,
+                            "total_tokens": 1923,
+                            "input_token_details": {
+                                "cache_read": 0
+                            },
+                            "output_token_details": {
+                                "reasoning": 195
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
